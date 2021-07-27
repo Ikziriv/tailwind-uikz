@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Wedding Invitation Yuli, Ibnu">
+	<meta name="author" content="riskiivan">
+	<title>IKEH-A Furniture Example</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<style>
+		.rotated {
+			transform-origin: 73% 73%;
+			transform: rotate(90deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="app" class="container mx-auto">
+		<div class="flex flex-wrap">
+			<div class="w-1/3 h-screen">
+				<div class="flex flex-wrap h-full">
+					<div class="h-auto p-2 w-auto">
+						<div class="inset-x-0 top-0 text-gray-700 text-center p-2 mt-5">
+							<div class="clearfix">
+								<div class="float-left">
+									<small class="text-logo font-bold tracking-widest" style="letter-spacing: 0.7em;">
+										<span class="text-gray-900 text-logo-one">IKEH</span>-<span
+											class="text-gray-900 text-logo-two">A</span>
+									</small>
+								</div>
+								<div class="float-right ml-64 mt-3">
+									<svg class="btn-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+										height="24" viewBox="0 0 172 172" style=" fill:#000000;">
+										<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+											stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+											stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+											font-weight="none" font-size="none" text-anchor="none"
+											style="mix-blend-mode: normal">
+											<path d="M0,172v-172h172v172z" fill="none"></path>
+											<g fill="#333333">
+												<path
+													d="M21.5,21.5v14.33333h129v-14.33333zM57.33333,50.16667v14.33333h93.16667v-14.33333zM21.5,78.83333v14.33333h129v-14.33333zM57.33333,107.5v14.33333h93.16667v-14.33333zM21.5,136.16667v14.33333h129v-14.33333z">
+												</path>
+											</g>
+										</g>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="h-auto p-2 w-auto">
+						<div class="inset-y-0 left-0 text-gray-900 p-2">
+							<h3 class="text-head-main tracking-widest font-semibold text-3xl text-left uppercase">New
+								<br>Lower Price</h3>
+							<hr class="hr-line">
+							<p class="text-p-main text-sm text-gray-600 mt-2">By producing in high volumes with smarter
+								design and
+								flat
+								packaging, we
+								can keep our
+								costs down. That way we can
+								continue to offer affordable products without having to compromise on quality.</p>
+							<button class="text-btn flex-shrink-0 border-transparent border-4 text-gray-900 hover:text-gray-500 text-sm py-1 px-2
+								rounded inline-flex items-center" type="button">
+								<svg class="svg-btn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+									height="24" viewBox="0 0 172 172" style=" fill:#000000;">
+									<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+										stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+										stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+										font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+										<path d="M0,172v-172h172v172z" fill="none"></path>
+										<g fill="#333333">
+											<path
+												d="M136.16667,57.33333v21.5h-129v14.33333h129v21.5l28.66667,-28.66667z">
+											</path>
+										</g>
+									</g>
+								</svg> &nbsp; More
+							</button>
+						</div>
+					</div>
+					<div class="h-auto p-2 w-auto">
+						<div class="inset-x-0 bottom-0 text-gray-700 p-2 mb-10">
+							<div class="w-full bg-white shadow card-lp">
+								<div class="flex relative">
+									<img class="w-1/2 img-lp"
+										src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/images/307/0530728_PE646880_S4.jpg"
+										alt="Sunset in the mountains">
+									<div class="w-1/2 p-2 text-left mt-12 p-lp">
+										<div class="font-bold text-sm mb-1 uppercase">SETSKOG</div>
+										<p class="text-gray-700 text-sm mb-2">
+											Bedside table, black
+										</p>
+										<hr>
+										<div class="mt-3">
+											<small class="line-through">Rp. 699.000</small> / <small
+												class="font-bold price-lp">Rp.
+												499.000</small>
+										</div>
+									</div>
+									<div class="absolute top-0 right-0 bg-gray-900 label-lp">
+										<div class="text-white font-bold text-sm p-2">LP</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="img-center relative w-1/3 h-screen bg-no-repeat bg-cover bg-center"
+				style="background-image: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');">
+				<div class=" bg-search w-full bg-gray-900 shadow absolute bottom-0 right-0">
+					<div class="flex">
+						<div class="w-full p-3 text-left">
+							<form class="w-full mx-auto">
+								<div class="flex items-center border-b border-b-2 border-white">
+									<input class="input-search appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight
+										focus:outline-none" type="text">
+									<button class="btn-search flex-shrink-0 border-transparent border-4 text-white hover:text-gray-800 text-sm py-1 px-2
+										rounded" type="button">
+										Search
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-1/3 bg-white h-screen">
+				<div class="flex content-between flex-wrap bg-white h-full">
+					<div class="bg-new w-full h-64 self-stretch flex-1 p-2 bg-gray-900 bg-no-repeat bg-cover bg-bottom">
+						<div class="flex flex-col justify-start">
+							<div class="text-gray-100 text-left px-4 py-2 m-2 font-semibold text-new">What's New</div>
+							<div class="text-gray-100 text-left px-4 py-1">
+								<div class="text-grey-darkest">
+									<ul class="pl-4 text-p-new">
+										<li class="pb-1 text-xs flex items-center">
+											<div class="rounded-full fill-current text-green-700">
+
+											</div> <span class="ml-3">Holiday For Everyone</span>
+										</li>
+										<li class="pb-1 text-xs flex items-center">
+											<div class="rounded-full fill-current text-green-700">
+
+											</div> <span class="ml-3">Living Room Decor Ideas</span>
+										</li>
+										<li class="pb-1 text-xs flex items-center">
+											<div class="rounded-full fill-current text-green-700">
+
+											</div> <span class="ml-3">Solution For Small Bedroom</span>
+										</li>
+										<li class="pb-1 text-xs flex items-center">
+											<div class="rounded-full fill-current text-green-700">
+
+											</div> <span class="ml-3">Wall Decorations on a Budget</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="text-gray-700 text-right px-2 m-2 mt-8 btn-new">
+								<button class="bg-white hover:bg-gray-200 py-1 px-2 text-sm">
+									Explorer
+								</button></div>
+						</div>
+					</div>
+					<div class="w-full bg-white bg-recom">
+						<div class="flex flex-col justify-start">
+							<div class="clearfix">
+								<div class="text-recom float-left text-gray-900 px-4 py-2 m-2">
+									Our Recommended <br> Categories
+								</div>
+								<div class="btn-recom-more float-right text-gray-900 px-6 py-2 mt-5">
+									<button
+										class="flex-shrink-0 border-transparent border-4 text-gray-900 hover:text-gray-500 text-sm py-4 px-2 rounded inline-flex items-center"
+										type="button">
+										<small>See More</small>
+									</button>
+
+								</div>
+							</div>
+							<div class="flex flex-warp">
+								<div class="card-recom-one w-full text-gray-700 text-center px-4 py-1 m-2">
+									<div class="w-full bg-white shadow">
+										<div class="flex relative">
+											<img class="w-full"
+												src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_157259558810.jpeg"
+												alt="Sunset in the mountains">
+											<div
+												class="border-t-2 border-gray-900 absolute inset-x-0 bottom-0 h-8 bg-white text-right shadow-lg">
+												<small class="mr-3">View</small>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-recom-two w-full text-gray-700 text-center px-4 py-1 m-2">
+									<div class="w-full bg-white shadow">
+										<div class="flex relative">
+											<img class="w-full"
+												src="https://d2xjmi1k71iy2m.cloudfront.net/dairyfarm/id/pageImages/page__en_us_157259558811.jpeg"
+												alt="Sunset in the mountains">
+											<div
+												class="border-t-2 border-gray-900 absolute inset-x-0 bottom-0 h-8 bg-white text-right shadow-lg">
+												<small class="mr-3">View</small>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="bg-info w-full bg-gray-300 h-auto bg-no-repeat bg-cover bg-bottom py-1 mt-6 border-b-4 border-gray-900">
+						<div class="flex flex-col justify-between">
+							<div class="text-info text-left text-gray-900 px-4 m-2">
+								<span class="font-semibold">Latest Info</span>
+							</div>
+							<div class="clearfix">
+								<div class="p-info float-left text-left text-gray-900 px-4 m-2 mb-5 text-sm">
+									Enjoy <span class="font-bold">0%</span> Installment Payment
+									<br>Plan For Minimum Purchase of
+									<br>
+									<span class="font-bold">Rp. 500.000*.</span>
+								</div>
+								<div class="click-info float-right text-gray-700 text-right px-2 m-3">
+									<button
+										class="text-gray-300 bg-gray-900 hover:bg-black hover:text-white py-1 px-2 text-sm">
+										Click Here
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hidden md:flex lg:flex absolute bottom-0 left-0 mb-16 py-8">
+			<div class="flex flex-col">
+				<div class="ig-icon bg-gray-900 text-center px-2 py-2 m-2">
+					<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+						viewBox="0 0 172 172" style=" fill:#000000;">
+						<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+							stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+							font-family="none" font-weight="none" font-size="none" text-anchor="none"
+							style="mix-blend-mode: normal">
+							<path d="M0,172v-172h172v172z" fill="none"></path>
+							<g fill="#ffffff">
+								<path
+									d="M55.04,10.32c-24.6648,0 -44.72,20.0552 -44.72,44.72v61.92c0,24.6648 20.0552,44.72 44.72,44.72h61.92c24.6648,0 44.72,-20.0552 44.72,-44.72v-61.92c0,-24.6648 -20.0552,-44.72 -44.72,-44.72zM127.28,37.84c3.784,0 6.88,3.096 6.88,6.88c0,3.784 -3.096,6.88 -6.88,6.88c-3.784,0 -6.88,-3.096 -6.88,-6.88c0,-3.784 3.096,-6.88 6.88,-6.88zM86,48.16c20.8808,0 37.84,16.9592 37.84,37.84c0,20.8808 -16.9592,37.84 -37.84,37.84c-20.8808,0 -37.84,-16.9592 -37.84,-37.84c0,-20.8808 16.9592,-37.84 37.84,-37.84zM86,55.04c-17.0624,0 -30.96,13.8976 -30.96,30.96c0,17.0624 13.8976,30.96 30.96,30.96c17.0624,0 30.96,-13.8976 30.96,-30.96c0,-17.0624 -13.8976,-30.96 -30.96,-30.96z">
+								</path>
+							</g>
+						</g>
+					</svg>
+				</div>
+				<div class="yt-icon bg-gray-900 text-center px-2 py-2 m-2">
+					<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+						viewBox="0 0 172 172" style=" fill:#000000;">
+						<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+							stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+							font-family="none" font-weight="none" font-size="none" text-anchor="none"
+							style="mix-blend-mode: normal">
+							<path d="M0,172v-172h172v172z" fill="none"></path>
+							<g fill="#ffffff">
+								<path
+									d="M154.45063,49.88c-1.37063,-7.56531 -7.90125,-13.07469 -15.48,-14.79469c-11.34125,-2.40531 -32.33063,-4.12531 -55.04,-4.12531c-22.69594,0 -44.02125,1.72 -55.37594,4.12531c-7.56531,1.72 -14.10937,6.88 -15.48,14.79469c-1.38406,8.6 -2.75469,20.64 -2.75469,36.12c0,15.48 1.37063,27.52 3.09063,36.12c1.38406,7.56531 7.91469,13.07469 15.48,14.79469c12.04,2.40531 32.68,4.12531 55.38937,4.12531c22.70938,0 43.34938,-1.72 55.38938,-4.12531c7.56531,-1.72 14.09594,-6.88 15.48,-14.79469c1.37062,-8.6 3.09062,-20.98937 3.44,-36.12c-0.69875,-15.48 -2.41875,-27.52 -4.13875,-36.12zM65.36,110.08v-48.16l41.96531,24.08z">
+								</path>
+							</g>
+						</g>
+					</svg>
+				</div>
+				<div class="fb-icon bg-gray-900 text-center px-2 py-2 m-2">
+					<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+						viewBox="0 0 172 172" style=" fill:#000000;">
+						<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+							stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+							font-family="none" font-weight="none" font-size="none" text-anchor="none"
+							style="mix-blend-mode: normal">
+							<path d="M0,172v-172h172v172z" fill="none"></path>
+							<g fill="#ffffff">
+								<path
+									d="M110.08,37.84h17.2c1.89888,0 3.44,-1.54112 3.44,-3.44v-23.17528c0,-1.80256 -1.38632,-3.3024 -3.182,-3.42968c-5.47304,-0.38872 -16.16456,-0.91504 -23.85296,-0.91504c-21.12504,0 -34.88504,12.6592 -34.88504,35.66592v22.81408h-24.08c-1.89888,0 -3.44,1.54112 -3.44,3.44v24.08c0,1.89888 1.54112,3.44 3.44,3.44h24.08v65.36c0,1.89888 1.54112,3.44 3.44,3.44h24.08c1.89888,0 3.44,-1.54112 3.44,-3.44v-65.36h24.84368c1.7544,0 3.22672,-1.31752 3.41936,-3.0616l2.67632,-24.08c0.22704,-2.03648 -1.36912,-3.8184 -3.41936,-3.8184h-27.52v-17.2c0,-5.70008 4.61992,-10.32 10.32,-10.32z">
+								</path>
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="hidden md:flex lg:flex absolute bottom-0 right-0 mb-4 py-5">
+			<div class="flex justify-center bg-transparant rotated">
+				<div class="text-gray-800 text-center tracking-widest uppercase m-1 text-xs font-semibold"
+					style="letter-spacing: 0.3em;">
+					<small>@IKZIRIV</small>
+				</div>
+			</div>
+		</div> -->
+	</div>
+	<script type="text/javascript">
+		TweenMax.from(".text-logo", 1, {
+			delay: 0.4,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".text-logo-one", 1, {
+			delay: 0.6,
+			opacity: 0,
+			x: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".text-logo-two", 1, {
+			delay: 0.8,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".btn-menu", 1, {
+			delay: 1.0,
+			opacity: 0,
+			x: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".text-head-main", 1, {
+			delay: 1.2,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".hr-line", 1, {
+			delay: 1.6,
+			opacity: 0,
+			x: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".text-p-main", 1, {
+			delay: 1.4,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".svg-btn", 1, {
+			delay: 1.6,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".text-btn", 1, {
+			delay: 1.8,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".text-btn", 1, {
+			delay: 2.0,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".card-lp", 1, {
+			delay: 2.2,
+			opacity: 0,
+			x: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".img-lp", 1, {
+			delay: 2.4,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".p-lp", 1, {
+			delay: 2.6,
+			opacity: 0,
+			y: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".price-lp", 1, {
+			delay: 2.8,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".label-lp", 1, {
+			delay: 3.0,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".img-center", 1, {
+			delay: 0.6,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".bg-search", 1, {
+			delay: 3.4,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".input-search", 1, {
+			delay: 3.6,
+			opacity: 0,
+			x: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".btn-search", 1, {
+			delay: 3.8,
+			opacity: 0,
+			x: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".bg-new", 1, {
+			delay: 4.0,
+			opacity: 0,
+			y: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".text-new", 1, {
+			delay: 4.2,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".text-p-new", 1, {
+			delay: 4.4,
+			opacity: 0,
+			x: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".btn-new", 1, {
+			delay: 4.6,
+			opacity: 0,
+			y: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".bg-recom", 1, {
+			delay: 4.8,
+			opacity: 0,
+			y: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".text-recom", 1, {
+			delay: 5.0,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".card-recom-one", 1, {
+			delay: 5.2,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".card-recom-two", 1, {
+			delay: 5.4,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".btn-recom-more", 1, {
+			delay: 5.6,
+			opacity: 0,
+			y: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".bg-info", 1, {
+			delay: 3.6,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".text-info", 1, {
+			delay: 3.8,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".p-info", 1, {
+			delay: 4.0,
+			opacity: 0,
+			x: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".click-info", 1, {
+			delay: 4.2,
+			opacity: 0,
+			y: -50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".ig-icon", 1, {
+			delay: 2.4,
+			opacity: 0,
+			y: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".yt-icon", 1, {
+			delay: 2.6,
+			opacity: 0,
+			y: 50,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".fb-icon", 1, {
+			delay: 2.8,
+			opacity: 0,
+			y: 50,
+			ease: Expo.easeInOut
+		});
+	</script>
+</body>
+
+</html>

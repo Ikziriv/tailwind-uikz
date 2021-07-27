@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Wedding Invitation Yuli, Ibnu">
+	<meta name="author" content="riskiivan">
+	<title>KITCHENWARE Example</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<script src="assets/js/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="assets/js/hover-effect.umd.js"></script>
+	<style>
+		.rotated {
+			transform-origin: 73% 73%;
+			transform: rotate(90deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="app" class="container mx-auto">
+		<div class="flex flex-wrap">
+			<div class="w-1/2 h-screen">
+				<div class="flex flex-col">
+					<div class="w-full">
+						<div class="flex flex-col justify-start">
+							<div class="w-full px-4 py-2 m-2 mt-5 font-semibold tracking-widest">
+								<div class="clearfix">
+									<span class="float-left logo">KT/CHN</span>
+									<ul class="flex float-right font-thin">
+										<li class="mr-6 nav-about">
+											<a class="text-gray-900 text-sm" href="#">About</a>
+										</li>
+										<li class="mr-6 nav-contact">
+											<a class="text-gray-900 text-sm" href="#">Contact</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="w-full px-4 py-2 m-1 bg-transparant mt-24">
+								<div class="head-main-text mt-5 m-5 ml-5 text-3xl font-bold text-gray-900">
+									KITCHENWARE<br>
+									Collection
+								</div>
+								<p class="p-main-text text-sm m-5 ml-5 text-gray-700">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dolores. Itaque fugit
+									ducimus architecto est officia nihil corporis a, laudantium, quia ad, eligendi quas!
+									Placeat ipsa voluptate sequi a molestias!
+								</p>
+								<button class="btn-shop btn btn-blue m-5 ml-5 border-b-1">
+									Shop Now
+								</button>
+							</div>
+							<div class="w-full px-4 py-2 m-2 mt-40 flex text-sm footer-text">
+								<b class="mr-1">2019</b> / <small
+									class="uppercase ml-1 mt-1 tracking-widest">@Ikziriv</small>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hidden md:flex lg:flex absolute top-0 right-0 mt-24 uppercase tracking-widest text-xs"
+					style="transform-origin: 73% 73%;transform: rotate(90deg);">
+					<small class="text-r-one">Kitchen Tools</small>
+				</div>
+				<div class="hidden md:flex lg:flex absolute bottom-0 right-0 py-16">
+					<div class="flex flex-col">
+						<div class="bg-blue-900 text-center px-2 py-2 m-1 ig-icon">
+							<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+								height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,172v-172h172v172z" fill="none"></path>
+									<g fill="#ffffff">
+										<path
+											d="M55.04,10.32c-24.6648,0 -44.72,20.0552 -44.72,44.72v61.92c0,24.6648 20.0552,44.72 44.72,44.72h61.92c24.6648,0 44.72,-20.0552 44.72,-44.72v-61.92c0,-24.6648 -20.0552,-44.72 -44.72,-44.72zM127.28,37.84c3.784,0 6.88,3.096 6.88,6.88c0,3.784 -3.096,6.88 -6.88,6.88c-3.784,0 -6.88,-3.096 -6.88,-6.88c0,-3.784 3.096,-6.88 6.88,-6.88zM86,48.16c20.8808,0 37.84,16.9592 37.84,37.84c0,20.8808 -16.9592,37.84 -37.84,37.84c-20.8808,0 -37.84,-16.9592 -37.84,-37.84c0,-20.8808 16.9592,-37.84 37.84,-37.84zM86,55.04c-17.0624,0 -30.96,13.8976 -30.96,30.96c0,17.0624 13.8976,30.96 30.96,30.96c17.0624,0 30.96,-13.8976 30.96,-30.96c0,-17.0624 -13.8976,-30.96 -30.96,-30.96z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</div>
+						<div class="bg-blue-900 text-center px-2 py-2 m-1 yt-icon">
+							<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+								height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,172v-172h172v172z" fill="none"></path>
+									<g fill="#ffffff">
+										<path
+											d="M154.45063,49.88c-1.37063,-7.56531 -7.90125,-13.07469 -15.48,-14.79469c-11.34125,-2.40531 -32.33063,-4.12531 -55.04,-4.12531c-22.69594,0 -44.02125,1.72 -55.37594,4.12531c-7.56531,1.72 -14.10937,6.88 -15.48,14.79469c-1.38406,8.6 -2.75469,20.64 -2.75469,36.12c0,15.48 1.37063,27.52 3.09063,36.12c1.38406,7.56531 7.91469,13.07469 15.48,14.79469c12.04,2.40531 32.68,4.12531 55.38937,4.12531c22.70938,0 43.34938,-1.72 55.38938,-4.12531c7.56531,-1.72 14.09594,-6.88 15.48,-14.79469c1.37062,-8.6 3.09062,-20.98937 3.44,-36.12c-0.69875,-15.48 -2.41875,-27.52 -4.13875,-36.12zM65.36,110.08v-48.16l41.96531,24.08z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</div>
+						<div class="bg-blue-900 text-center px-2 py-2 m-1  fb-icon">
+							<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+								height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,172v-172h172v172z" fill="none"></path>
+									<g fill="#ffffff">
+										<path
+											d="M110.08,37.84h17.2c1.89888,0 3.44,-1.54112 3.44,-3.44v-23.17528c0,-1.80256 -1.38632,-3.3024 -3.182,-3.42968c-5.47304,-0.38872 -16.16456,-0.91504 -23.85296,-0.91504c-21.12504,0 -34.88504,12.6592 -34.88504,35.66592v22.81408h-24.08c-1.89888,0 -3.44,1.54112 -3.44,3.44v24.08c0,1.89888 1.54112,3.44 3.44,3.44h24.08v65.36c0,1.89888 1.54112,3.44 3.44,3.44h24.08c1.89888,0 3.44,-1.54112 3.44,-3.44v-65.36h24.84368c1.7544,0 3.22672,-1.31752 3.41936,-3.0616l2.67632,-24.08c0.22704,-2.03648 -1.36912,-3.8184 -3.41936,-3.8184h-27.52v-17.2c0,-5.70008 4.61992,-10.32 10.32,-10.32z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-1/2 bg-blue-800 h-screen">
+				<div class="flex flex-col">
+					<div class="w-full">
+						<div class="bg-white">
+							<div class="bg-gray-400 relative main-img">
+								<div class="bg-white w-full">
+									<img class="w-full"
+										src="https://images.unsplash.com/photo-1572656934803-d2162b2e98bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80">
+								</div>
+								<div class="text-count absolute top-0 left-0 p-3 h-auto w-auto bg-blue-900">
+									<span class="text-2xl font-semibold text-white"><b>01</b> / 20</span>
+								</div>
+								<div class="absolute bottom-0 right-0 flex p-2 mr-2">
+									<div class="arrow-left p-3 h-auto w-auto bg-blue-900 mr-2">
+										<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32"
+											viewBox="0 0 172 172" style=" fill:#000000;">
+											<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+												stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+												stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+												font-weight="none" font-size="none" text-anchor="none"
+												style="mix-blend-mode: normal">
+												<path d="M0,172v-172h172v172z" fill="none"></path>
+												<g fill="#ffffff">
+													<path
+														d="M102.29297,23.01172l-59.125,59.125l-3.69531,3.86328l3.69531,3.86328l59.125,59.125l7.72656,-7.72656l-55.26172,-55.26172l55.26172,-55.26172z">
+													</path>
+												</g>
+											</g>
+										</svg>
+									</div>
+									<div class="arrow-right p-3 h-auto w-auto bg-blue-900">
+										<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32"
+											viewBox="0 0 172 172" style=" fill:#000000;">
+											<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+												stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+												stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+												font-weight="none" font-size="none" text-anchor="none"
+												style="mix-blend-mode: normal">
+												<path d="M0,172v-172h172v172z" fill="none"></path>
+												<g fill="#ffffff">
+													<path
+														d="M69.70703,23.01172l-7.72656,7.72656l55.26172,55.26172l-55.26172,55.26172l7.72656,7.72656l59.125,-59.125l3.69531,-3.86328l-3.69531,-3.86328z">
+													</path>
+												</g>
+											</g>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-full">
+						<div class="bg-white">
+							<div class="flex flex-wrap menu-bottom">
+								<div class="w-1/2">
+									<div class="bg-next-product flex flex-col justify-between bg-gray-600">
+										<div class="w-full">
+											<div
+												class="text-next-product px-4 py-2 m-2 text-2xl font-semibold text-white">
+												Next <br>
+												Product
+											</div>
+										</div>
+										<div class="w-full text-gray-700 px-4 py-2 m-2 mt-8">
+											<div>
+												<button class="text-next-product-enter bg-transparant hover:bg-blue-900 text-white py-2 px-2 inline-flex
+												items-center">
+													<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+														height="24" viewBox="0 0 172 172" style=" fill:#000000;">
+														<g fill="none" fill-rule="nonzero" stroke="none"
+															stroke-width="1" stroke-linecap="butt"
+															stroke-linejoin="miter" stroke-miterlimit="10"
+															stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+															font-weight="none" font-size="none" text-anchor="none"
+															style="mix-blend-mode: normal">
+															<path d="M0,172v-172h172v172z" fill="none"></path>
+															<g fill="#ffffff">
+																<path
+																	d="M136.16667,57.33333v21.5h-129v14.33333h129v21.5l28.66667,-28.66667z">
+																</path>
+															</g>
+														</g>
+													</svg>
+													<span class="ml-2">Enter</span>
+												</button>
+											</div>
+											<div class="clearfix text-white">
+												<div class="float-left mt-2 text-np-ftr-l">
+													<span>02</span>
+													<small>Home Tools.</small>
+												</div>
+												<div class="float-right mt-2 mr-3 m-2 text-np-ftr-r">
+													<small>Make Better</small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="w-1/2">
+									<div class="w-full relative z-40">
+										<div class="bg-subscribe bg-blue-900 overflow-hidden">
+											<div class="w-full">
+												<div
+													class="text-subscribe text-left px-4 py-2 m-2 mt-2 text-lg font-semibold text-white">
+													<span>Subscribe</span>
+												</div>
+											</div>
+											<div class="p-subscribe text-left px-4 py-2 m-2 text-base mt-8 text-white">
+												Get in touch for details.
+											</div>
+											<div class="flex justify-center mt-6">
+												<input type="text" name="email"
+													class="input-subscribe bg-gray-600 hover:bg-white text-gray-600 font-base text-grey-darkest w-full">
+											</div>
+											<a class="btn-subscribe block flex items-center justify-center bg-blue-800 p-2 text-sm text-gray-300 uppercase mt-8"
+												href="#">
+												<span>Send</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			TweenMax.from(".logo", 1, {
+				delay: 0.4,
+				y: -50,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".nav-about", 1, {
+				delay: 0.6,
+				x: -50,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".nav-contact", 1, {
+				delay: 0.8,
+				x: -50,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".head-main-text", 1, {
+				delay: 0.6,
+				opacity: 0,
+				x: -50,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".p-main-text", 1, {
+				delay: 0.8,
+				opacity: 0,
+				x: -50,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".btn-shop", 1, {
+				delay: 1.0,
+				y: 50,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".footer-text", 1, {
+				delay: 1.2,
+				x: 50,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".text-r-one", 1, {
+				delay: 1.2,
+				x: -50,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".ig-icon", 1, {
+				delay: 1.4,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".yt-icon", 1, {
+				delay: 1.6,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".fb-icon", 1, {
+				delay: 1.8,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".main-img", 1, {
+				delay: 0.6,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".text-count", 1, {
+				delay: 0.8,
+				y: -50,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".arrow-left", 1, {
+				delay: 1.0,
+				x: 50,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".arrow-right", 1, {
+				delay: 1.2,
+				x: 50,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".left-arrow", 1, {
+				delay: 1.8,
+				opacity: 0,
+				x: 50,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".menu-bottom", 1, {
+				delay: 0.6,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".bg-next-product", 1, {
+				delay: 2.0,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".text-next-product-enter", 1, {
+				delay: 2.2,
+				opacity: 0,
+				x: 50,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".text-next-product", 1, {
+				delay: 2.4,
+				opacity: 0,
+				x: -50,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".text-np-ftr-l", 1, {
+				delay: 2.6,
+				opacity: 0,
+				x: -50,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".text-np-ftr-r", 1, {
+				delay: 2.8,
+				opacity: 0,
+				x: 50,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".right-arrow", 1, {
+				delay: 1.8,
+				opacity: 0,
+				x: -50,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".bg-subscribe", 1, {
+				delay: 2.2,
+				opacity: 0,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".text-subscribe", 1, {
+				delay: 2.4,
+				opacity: 0,
+				x: -50,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".p-subscribe", 1, {
+				delay: 2.6,
+				opacity: 0,
+				y: 50,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".input-subscribe", 1, {
+				delay: 2.8,
+				opacity: 0,
+				x: -50,
+				ease: Expo.easeInOut
+			});
+			TweenMax.from(".btn-subscribe", 1, {
+				delay: 3.0,
+				opacity: 0,
+				y: 50,
+				ease: Expo.easeInOut
+			});
+		</script>
+</body>
+
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Wedding Invitation Yuli, Ibnu">
+	<meta name="author" content="riskiivan">
+	<title>FU/TR Example</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<script src="assets/js/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="assets/js/hover-effect.umd.js"></script>
+	<style>
+		.rotated {
+			transform-origin: 73% 73%;
+			transform: rotate(90deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="app">
+		<nav class="bg-white border border-white" role="navigation">
+			<div class="container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap">
+				<div class="mr-4 md:mr-8 logo">
+					<a href="#" rel="home">
+						<span class="font-bold tracking-widest">FU/TR</span>
+					</a>
+				</div>
+				<div class="ml-auto md:hidden">
+					<button class="flex items-center px-3 py-2 border rounded" type="button">
+						<svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<title>Menu</title>
+							<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+						</svg>
+					</button>
+				</div>
+				<div class="w-full md:w-full md:flex-grow md:flex md:items-center">
+					<ul class="nav-one flex flex-col text-sm mt-4 -mx-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0
+						md:mr-4 lg:mr-8 md:border-0">
+						<li>
+							<a class="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">New</a>
+						</li>
+						<li>
+							<a class="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">Furniture</a>
+						</li>
+						<li>
+							<a class="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">Accessories</a>
+						</li>
+						<li>
+							<a class="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">Dinning & Entertaining</a>
+						</li>
+					</ul>
+					<form
+						class="flex flex-col mt-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:ml-32 md:mt-0 md:pt-0 md:border-0">
+						<div class="flex items-center search">
+							<div class="md:w-2/3">
+								<input
+									class="bg-transparant appearance-none border-b border-gray-200 text-sm w-64 py-2 px-1 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-900"
+									id="inline-full-name" placeholder="Search" type="text">
+							</div>
+							<button
+								class="bg-transparant hover:bg-gray-100 text-gray-800 font-bold py-2 px-2 ml-6 inline-flex items-center">
+								<svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+									width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+									<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+										stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+										stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+										font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+										<path d="M0,172v-172h172v172z" fill="none"></path>
+										<g fill="#333333">
+											<path
+												d="M72.24,10.32c-32.33062,0 -58.48,26.14938 -58.48,58.48c0,32.33063 26.14938,58.48 58.48,58.48c11.54281,0 22.22563,-3.38625 31.2825,-9.1375l42.2475,42.2475l14.62,-14.62l-41.71,-41.6025c7.49813,-9.83625 12.04,-22.02406 12.04,-35.3675c0,-32.33062 -26.14937,-58.48 -58.48,-58.48zM72.24,24.08c24.76531,0 44.72,19.95469 44.72,44.72c0,24.76531 -19.95469,44.72 -44.72,44.72c-24.76531,0 -44.72,-19.95469 -44.72,-44.72c0,-24.76531 19.95469,-44.72 44.72,-44.72z">
+											</path>
+										</g>
+									</g>
+								</svg>
+							</button>
+						</div>
+					</form>
+					<ul class="nav-two flex flex-col text-sm mt-4 -mx-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0
+						md:ml-4 lg:ml-8 md:border-0">
+						<li>
+							<a class="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">Gift</a>
+						</li>
+						<li>
+							<a class="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">Sale</a>
+						</li>
+					</ul>
+					<div class="inline-flex ml-8">
+						<button class="btn-bucket hover:bg-gray-200">
+							<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
+								height="32" viewBox="0 0 172 172" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,172v-172h172v172z" fill="none"></path>
+									<g fill="#333333">
+										<path
+											d="M86,16.125c-14.76026,0 -26.875,12.11474 -26.875,26.875v5.375h-26.53906l-0.33594,5.03906l-5.375,96.75l-0.33594,5.71094h118.92188l-0.33594,-5.71094l-5.375,-96.75l-0.33594,-5.03906h-26.53906v-5.375c0,-14.76026 -12.11474,-26.875 -26.875,-26.875zM86,26.875c8.90234,0 16.125,7.22266 16.125,16.125v5.375h-32.25v-5.375c0,-8.90234 7.22266,-16.125 16.125,-16.125zM42.66406,59.125h16.46094v16.125h10.75v-16.125h32.25v16.125h10.75v-16.125h16.46094l4.70313,86h-96.07812z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</button>
+						<button class="btn-login hover:bg-gray-200 ml-8">
+							<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
+								height="32" viewBox="0 0 172 172" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,172v-172h172v172z" fill="none"></path>
+									<g fill="#333333">
+										<path
+											d="M86,21.5c-29.98242,0 -55.13574,20.59717 -62.31641,48.375h11.08594c6.86572,-21.79394 27.21094,-37.625 51.23047,-37.625c29.64648,0 53.75,24.10352 53.75,53.75c0,29.64648 -24.10352,53.75 -53.75,53.75c-24.01953,0 -44.36474,-15.83105 -51.23047,-37.625h-11.08594c7.18067,27.77783 32.33398,48.375 62.31641,48.375c35.56739,0 64.5,-28.93261 64.5,-64.5c0,-35.56738 -28.93261,-64.5 -64.5,-64.5zM82.47266,60.63672l-7.72656,7.72656l12.26172,12.26172h-65.50781v10.75h65.50781l-12.26172,12.26172l7.72656,7.72656l21.5,-21.5l3.69531,-3.86328l-3.69531,-3.86328z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="flex flex-wrap">
+			<div class="img-l flex-grow bg-gray-500 h-auto bg-no-repeat bg-cover bg-center"
+				style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80');">
+			</div>
+			<div class="ftur w-1/4 bg-blue-900 h-64">
+				<div class="px-4 ml-4 mt-5 py-6 text-white ftur-txt-head">
+					<span class="tracking-widest text-2xl"><b>FU/TR</b> SHOP</span> <br>
+					<p class="uppercase text-xs mt-3">
+						<b>Stylish Living</b><br>
+						<small>for the</small>
+						<br><b>Fabulous & Fearless</b>
+					</p>
+				</div>
+			</div>
+			<div class="img-r w-1/4 bg-gray-400 h-64 bg-no-repeat bg-cover bg-left"
+				style="background-image: url('https://images.unsplash.com/photo-1472157510410-64a053cbc39f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60');">
+			</div>
+		</div>
+		<div class="flex flex-wrap">
+			<div class="w-1/2 bg-white h-auto relative">
+				<div class="flex flex-wrap">
+					<div class="cs-head-txt w-auto px-6 ml-8 mt-5 py-6 text-2xl h-auto">
+						WHAT <span class="font-bold">OUR</span>
+						<br> <span class="font-semibold">CUSTOMERS</span> <br> SAY
+					</div>
+					<div class="cs-p-txt w-1/2 px-6 ml-16 text-sm mt-8 py-6 h-auto text-gray-700">
+						We used FU/TR Shop to furnish our new Ski Property to take the hassle and stress out of getting
+						it ready in time to rent this winter.
+						<div class="cs-p-txt-sm mt-2 text-black">
+							" <small>Theo Doery</small>
+						</div>
+					</div>
+				</div>
+				<div class="absolute top-0 right-0 flex">
+					<div class="arr-t p-3 h-auto w-auto bg-transparant mt-5">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+							viewBox="0 0 226 226" style=" fill:#000000;">
+							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+								stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+								font-family="none" font-weight="none" font-size="none" text-anchor="none"
+								style="mix-blend-mode: normal">
+								<path d="M0,226v-226h226v226z" fill="none"></path>
+								<g fill="#333333">
+									<path
+										d="M113,62.67969l-6.17969,5.59115l-94.16667,84.75l12.35938,14.125l87.98698,-79.15885l87.98698,79.15885l12.35938,-14.125l-94.16667,-84.75z">
+									</path>
+								</g>
+							</g>
+						</svg>
+					</div>
+				</div>
+				<div class="absolute bottom-0 right-0 flex">
+					<div class="arr-b p-3 h-auto w-auto bg-transparant mb-16">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+							viewBox="0 0 226 226" style=" fill:#000000;">
+							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+								stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+								font-family="none" font-weight="none" font-size="none" text-anchor="none"
+								style="mix-blend-mode: normal">
+								<path d="M0,226v-226h226v226z" fill="none"></path>
+								<g fill="#333333">
+									<path
+										d="M25.01302,58.85417l-12.35937,14.125l94.16667,84.75l6.17969,5.59115l6.17969,-5.59115l94.16667,-84.75l-12.35937,-14.125l-87.98698,79.15885z">
+									</path>
+								</g>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="w-1/4 bg-blue-900 h-56 bg-two-ftur">
+				<div class="ftur-txt-p px-4 ml-4 mt-12 py-3 text-sm text-white">
+					Always room for one more <br>
+					Thoughtful
+				</div>
+				<div class="ftur-btn px-4 ml-4 mt-6 text-white">
+					<button class="flex-shrink-0 border text-white hover:text-gray-200 text-sm py-1 px-2 uppercase"
+						type="button">
+						Shop Now
+					</button>
+				</div>
+			</div>
+			<div class="w-1/4 bg-white h-56 border-l-4 border-white">
+				<div class="week-htxt px-12 ml-2 py-6">
+					<span class="uppercase"><b>Weekend</b><br> Special</span>
+				</div>
+				<div class="week-ptxt px-12 ml-2">
+					<p class="text-base">
+						<b>15-50%</b> <br> Off Everything In Stock*
+					</p>
+					<p class="text-xs text-gray-700">
+						Offer valid until Des 15th <br> for in stock items.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-wrap">
+			<div class="w-1/6 bg-white">
+				<div class="flex flex-row ml-12 px-2 mt-8 py-1">
+					<div class="ig-btn bg-gray-600 text-center px-2 py-2 m-1 rounded-full ig-icon">
+						<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+							viewBox="0 0 172 172" style=" fill:#000000;">
+							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+								stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+								font-family="none" font-weight="none" font-size="none" text-anchor="none"
+								style="mix-blend-mode: normal">
+								<path d="M0,172v-172h172v172z" fill="none"></path>
+								<g fill="#ffffff">
+									<path
+										d="M55.04,10.32c-24.6648,0 -44.72,20.0552 -44.72,44.72v61.92c0,24.6648 20.0552,44.72 44.72,44.72h61.92c24.6648,0 44.72,-20.0552 44.72,-44.72v-61.92c0,-24.6648 -20.0552,-44.72 -44.72,-44.72zM127.28,37.84c3.784,0 6.88,3.096 6.88,6.88c0,3.784 -3.096,6.88 -6.88,6.88c-3.784,0 -6.88,-3.096 -6.88,-6.88c0,-3.784 3.096,-6.88 6.88,-6.88zM86,48.16c20.8808,0 37.84,16.9592 37.84,37.84c0,20.8808 -16.9592,37.84 -37.84,37.84c-20.8808,0 -37.84,-16.9592 -37.84,-37.84c0,-20.8808 16.9592,-37.84 37.84,-37.84zM86,55.04c-17.0624,0 -30.96,13.8976 -30.96,30.96c0,17.0624 13.8976,30.96 30.96,30.96c17.0624,0 30.96,-13.8976 30.96,-30.96c0,-17.0624 -13.8976,-30.96 -30.96,-30.96z">
+									</path>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="yt-btn bg-gray-600 text-center px-2 py-2 m-1 rounded-full yt-icon">
+						<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+							viewBox="0 0 172 172" style=" fill:#000000;">
+							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+								stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+								font-family="none" font-weight="none" font-size="none" text-anchor="none"
+								style="mix-blend-mode: normal">
+								<path d="M0,172v-172h172v172z" fill="none"></path>
+								<g fill="#ffffff">
+									<path
+										d="M154.45063,49.88c-1.37063,-7.56531 -7.90125,-13.07469 -15.48,-14.79469c-11.34125,-2.40531 -32.33063,-4.12531 -55.04,-4.12531c-22.69594,0 -44.02125,1.72 -55.37594,4.12531c-7.56531,1.72 -14.10937,6.88 -15.48,14.79469c-1.38406,8.6 -2.75469,20.64 -2.75469,36.12c0,15.48 1.37063,27.52 3.09063,36.12c1.38406,7.56531 7.91469,13.07469 15.48,14.79469c12.04,2.40531 32.68,4.12531 55.38937,4.12531c22.70938,0 43.34938,-1.72 55.38938,-4.12531c7.56531,-1.72 14.09594,-6.88 15.48,-14.79469c1.37062,-8.6 3.09062,-20.98937 3.44,-36.12c-0.69875,-15.48 -2.41875,-27.52 -4.13875,-36.12zM65.36,110.08v-48.16l41.96531,24.08z">
+									</path>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="fb-btn bg-gray-600 text-center px-2 py-2 m-1 rounded-full fb-icon">
+						<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+							viewBox="0 0 172 172" style=" fill:#000000;">
+							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+								stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+								font-family="none" font-weight="none" font-size="none" text-anchor="none"
+								style="mix-blend-mode: normal">
+								<path d="M0,172v-172h172v172z" fill="none"></path>
+								<g fill="#ffffff">
+									<path
+										d="M110.08,37.84h17.2c1.89888,0 3.44,-1.54112 3.44,-3.44v-23.17528c0,-1.80256 -1.38632,-3.3024 -3.182,-3.42968c-5.47304,-0.38872 -16.16456,-0.91504 -23.85296,-0.91504c-21.12504,0 -34.88504,12.6592 -34.88504,35.66592v22.81408h-24.08c-1.89888,0 -3.44,1.54112 -3.44,3.44v24.08c0,1.89888 1.54112,3.44 3.44,3.44h24.08v65.36c0,1.89888 1.54112,3.44 3.44,3.44h24.08c1.89888,0 3.44,-1.54112 3.44,-3.44v-65.36h24.84368c1.7544,0 3.22672,-1.31752 3.41936,-3.0616l2.67632,-24.08c0.22704,-2.03648 -1.36912,-3.8184 -3.41936,-3.8184h-27.52v-17.2c0,-5.70008 4.61992,-10.32 10.32,-10.32z">
+									</path>
+								</g>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="w-1/3 bg-gray-400 h-24 subs-bg">
+				<div class="px-12 py-2 mt-1">
+					<div class="subs-htxt">
+						<small class="text-sm text-gray-900">Subscribe to our newsletter</small>
+					</div>
+					<form class="w-full max-w-sm subs-input">
+						<div class="flex items-center py-2">
+							<input
+								class="appearance-none bg-white border w-full text-sm py-1 px-2 leading-tight focus:outline-none"
+								type="text" placeholder="Email" aria-label="Full name">
+							<button
+								class="flex-shrink-0 bg-blue-900 border-2 hover:bg-blue-600 text-sm text-white py-1 px-2 uppercase"
+								type="button">
+								<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+									height="24" viewBox="0 0 172 172" style=" fill:#000000;">
+									<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+										stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+										stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+										font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+										<path d="M0,172v-172h172v172z" fill="none"></path>
+										<g fill="#ffffff">
+											<path
+												d="M157.66667,14.33333l-143.33333,52.1123l38.96875,38.98275l75.69792,-62.42839l-62.42839,75.69792l38.98275,38.96875z">
+											</path>
+										</g>
+									</g>
+								</svg>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="w-1/4 bg-blue-800 h-24 relative signup-bg">
+				<div class="px-2 ml-6 py-6 signup-txt">
+					<small class="block text-white">Not a Member?</small>
+					<span class="block text-white uppercase tracking-widest">Sign Up</span>
+				</div>
+				<div class="signup-btn absolute inset-y-0 right-0 w-8 bg-blue-600">
+					<div class="text-center py-4 px-2 mt-6">
+						<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32"
+							viewBox="0 0 172 172" style=" fill:#000000;">
+							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+								stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+								font-family="none" font-weight="none" font-size="none" text-anchor="none"
+								style="mix-blend-mode: normal">
+								<path d="M0,172v-172h172v172z" fill="none"></path>
+								<g fill="#ffffff">
+									<path
+										d="M69.70703,23.01172l-7.72656,7.72656l55.26172,55.26172l-55.26172,55.26172l7.72656,7.72656l59.125,-59.125l3.69531,-3.86328l-3.69531,-3.86328z">
+									</path>
+								</g>
+							</g>
+						</svg>
+					</div>
+
+				</div>
+			</div>
+			<div class="bg-link w-1/4 bg-blue-700 h-24">
+				<ul class="px-12 ml-4 py-6 text-xs text-white uppercase tracking-widest">
+					<li><a href="#"><small>Help</small></a></li>
+					<li><a href="#"><small>About Us</small></a></li>
+					<li><a href="#"><small>Contact</small></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="flex flex-wrap">
+			<div class="w-1/6 bg-white h-auto footer-copy">
+				<div class="ml-12 px-3 font-semibold text-left text-xs h-auto tracking-widest">
+					<small>© 2019 <b>FU/TR</b> Shop</small>
+				</div>
+			</div>
+			<div class="w-1/3 h-5 bg-gray-200 subs-bg-two">
+			</div>
+			<div class="w-1/4 h-5 bg-blue-900 bg-three-ftur">
+			</div>
+			<div class="w-1/4 h-5 bg-blue-700 bg-link-two">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		TweenMax.from(".logo", 1, {
+			delay: 0.4,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".nav-one", 1, {
+			delay: 0.6,
+			y: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".nav-two", 1, {
+			delay: 0.8,
+			y: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".btn-bucket", 1, {
+			delay: 1.0,
+			x: 50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".btn-login", 1, {
+			delay: 1.2,
+			x: 50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".search", 1, {
+			delay: 1.4,
+			x: 50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".ftur", 1, {
+			delay: 1.8,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".ftur-txt-head", 1, {
+			delay: 2.0,
+			x: 50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".bg-two-ftur", 1, {
+			delay: 1.8,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".bg-three-ftur", 1, {
+			delay: 1.8,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".ftur-txt-p", 1, {
+			delay: 2.2,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".ftur-btn", 1, {
+			delay: 2.4,
+			x: 50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".week-htxt", 1, {
+			delay: 2.6,
+			y: 50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".week-ptxt", 1, {
+			delay: 2.8,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".img-l", 1, {
+			delay: 1.6,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".img-r", 1, {
+			delay: 2.0,
+			y: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".cs-head-txt", 1, {
+			delay: 2.2,
+			y: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".cs-p-txt", 1, {
+			delay: 2.4,
+			y: 50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".cs-p-txt-sm", 1, {
+			delay: 2.4,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".arr-t", 1, {
+			delay: 2.4,
+			y: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".arr-b", 1, {
+			delay: 2.6,
+			y: 50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".ig-btn", 1, {
+			delay: 2.6,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".yt-btn", 1, {
+			delay: 2.8,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".fb-btn", 1, {
+			delay: 3.0,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".subs-bg", 1, {
+			delay: 2.4,
+			y: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".subs-bg-two", 1, {
+			delay: 2.4,
+			y: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".subs-htxt", 1, {
+			delay: 2.6,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".subs-input", 1, {
+			delay: 2.6,
+			x: 50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".signup-bg", 1, {
+			delay: 1.8,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".signup-txt", 1, {
+			delay: 2.8,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".signup-btn", 1, {
+			delay: 2.8,
+			x: 50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".bg-link", 1, {
+			delay: 2.0,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".bg-link-two", 1, {
+			delay: 2.0,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".footer-copy", 1, {
+			delay: 2.0,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+	</script>
+</body>
+
+</html>
