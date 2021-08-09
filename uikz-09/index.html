@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Wedding Invitation Yuli, Ibnu">
+	<meta name="author" content="riskiivan">
+	<title>TEKOIDEA Example</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<script src="assets/js/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="assets/js/hover-effect.umd.js"></script>
+	<style>
+		.rotated {
+			transform-origin: 10% -90%;
+			transform: rotate(-90deg);
+		}
+
+		.service-r {
+			transform-origin: 10% 0%;
+			transform: rotate(90deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="app">
+		<div class="flex flex-wrap">
+			<div class="w-full md:w-1/3 lg:w-1/3 h-screen static border-r-2 border-gray-800">
+				<div class="absolute left-0 top-0 mt-16 h-6 w-6 bg-gray-700">
+					<div class="flex">
+						<span class="ml-12 tracking-widest font-bold uppercase" style="letter-spacing: 10px;">
+							TKID_
+						</span>
+					</div>
+				</div>
+				<div class="w-40 ml-24 mt-40">
+					<div class="flex">
+						<span class="text-3xl ml-2 text-gray-700 tracking-widest font-semibold uppercase">
+							Building relationships of trust
+						</span>
+					</div>
+				</div>
+				<!-- <div class="absolute bottom-0 left-0 ml-64 flex">
+					<div class="ml-32 mb-32 bg-gray-800">
+						<img class="bg-gray-400 w-auto h-64 bg-cover"
+							src="https://images.unsplash.com/photo-1568209865332-a15790aed756?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80">
+					</div>
+				</div> -->
+				<div class="absolute bottom-0 left-0 z-10">
+					<div class="bg-white px-2 py-2">
+						<div class="ml-24 lg:ml-56 mb-24 py-10 px-2 w-64">
+							<div class="text-sm text-gray-900 text-justify">
+								<b class="uppercase tracking-wide">TKID</b> (TEKOIDEA) has always been centric to
+								excellent
+								customer
+								experience
+								coupled with seamlessly integrated technology. With truly all-inclusive solutions we
+								can
+								prevent
+								the many pitfalls of the world of technology.
+							</div>
+							<div class="mt-2 text-xs border-t border-gray-700 pt-2">
+								We built on integrity and experience
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="absolute left-0 z-10 bottom-0 h-8 w-8 bg-yellow-300 mb-8">
+				</div>
+				<div class="absolute left-0 z-10 bottom-0 h-8 w-8 bg-red-300">
+					<div class="absolute left-0 z-10 bottom-0 h-4 w-4 bg-gray-800 rounded-full"></div>
+				</div>
+				<div class="absolute left-0 z-10 bottom-0 h-8 w-8 bg-blue-300 ml-8">
+				</div>
+				<div class="absolute bottom-0 left-0 z-10">
+					<div class="flex text-xs ml-1 mb-6 rotated text-black">
+						<span>Copyright</span> <small class="font-semibold">__________________@IKZIRIV</small>
+					</div>
+				</div>
+				<div class="absolute bottom-0 left-0 ml-56 px-3 mb-4 flex z-10">
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 226 226"
+						style=" fill:#000000;">
+						<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+							stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+							font-family="none" font-weight="none" font-size="none" text-anchor="none"
+							style="mix-blend-mode: normal">
+							<path d="M0,226v-226h226v226z" fill="none"></path>
+							<g fill="#333333">
+								<path
+									d="M40.68,18.08c-12.47972,0 -22.6,10.12028 -22.6,22.6v144.64c0,12.47972 10.12028,22.6 22.6,22.6h144.64c12.47972,0 22.6,-10.12028 22.6,-22.6v-144.64c0,-12.47972 -10.12028,-22.6 -22.6,-22.6zM103.96,81.36c17.8992,0 22.6,15.36447 22.6,23.50047h-4.52l-4.52,0.05297v-0.05297c0,-1.582 -0.5876,-14.46047 -13.56,-14.46047c-13.1984,0 -13.56,12.96887 -13.56,14.46047v6.51516c3.7516,-2.938 8.4524,-4.70539 13.56,-4.70539c12.4752,0 22.6,10.5369 22.6,23.5093c0,12.9724 -10.1248,23.50047 -22.6,23.50047c-12.4752,0 -22.6,-10.52807 -22.6,-23.50047v-25.31906c0,-8.136 4.7008,-23.50047 22.6,-23.50047zM167.24,81.36h9.04v45.2h9.04v9.04h-9.04v18.08h-9.04v-18.08h-31.64v-9.04zM167.24,97.18l-20.51656,29.38h20.51656zM103.96,115.71023c-3.5972,0 -7.04699,1.52461 -9.59012,4.23828c-2.54314,2.71367 -3.97119,6.39401 -3.96988,10.23102c0.00183,7.98687 6.07231,14.46047 13.56,14.46047c7.48769,0 13.55817,-6.4736 13.56,-14.46047c0.00132,-3.83701 -1.42674,-7.51735 -3.96988,-10.23102c-2.54314,-2.71367 -5.99293,-4.23828 -9.59012,-4.23828zM36.16,122.04h10.44367l7.59219,9.35781l7.54805,-9.35781h10.57609l-12.83609,15.86414l12.83609,15.77586h-10.30242l-7.6893,-9.40195l-7.59219,9.40195h-10.57609l12.83609,-15.90828z">
+								</path>
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<div class="w-full md:w-1/3 lg:w-1/3 h-screen relative">
+				<div class="absolute top-0 right-0 mr-2">
+					<div class="mt-20 py-3 mr-6 md:mr-4 lg:mr-4 w-64">
+						<ul class="flex font-semibold tracking-wide">
+							<li class="mr-6">
+								<a class="text-gray-900 hover:text-blue-800" href="#">Our Work</a>
+							</li>
+							<li class="mr-6">
+								<a class="text-gray-900 hover:text-blue-800" href="#">About</a>
+							</li>
+							<li class="mr-6">
+								<a class="text-gray-900 hover:text-blue-800" href="#">News</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mt-40 py-8 ml-8">
+					<div class="clearfix">
+						<div class="ml-64 w-24 float-left text-right">
+							<span class="text-1xl font-semibold">
+								Start a conversation
+							</span>
+						</div>
+					</div>
+					<div class="clearfix mt-12 py-2 mr-12">
+						<div class="px-6 float-right text-right">
+							<p class="text-sm mb-3 w-56">
+								San Diego — <br>
+								845 15th Street, Suite 501 <br>
+								San Diego, CA 92101 <br>
+								<br>
+								The Bay Area — <br>
+								Location Undisclosed
+							</p>
+						</div>
+					</div>
+					<div class="clearfix mt-12 mr-12">
+						<div class="px-8 float-right text-right">
+							<span class="block text-1xl uppercase text-xs mt-6 mb-2">
+								tkid@creative.com
+							</span>
+							<span class="block text-1xl text-xs">
+								+6289555112232
+							</span>
+						</div>
+					</div>
+					<div class="clearfix mt-4">
+						<div class="mr-20 float-right text-right">
+							<span class="block uppercase font-semibold text-xs mb-2 border-b-2 border-gray-900">
+								<small>Terms & Conditions</small>
+							</span>
+						</div>
+					</div>
+					<div class="clearfix mt-1">
+						<div class="mr-20 float-right text-right">
+							<span class="block uppercase font-semibold text-xs mb-2 border-b-2 border-gray-900">
+								<small>Privacy & Policy</small>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="absolute bottom-0 right-0">
+					<div class="flex flex-col content-center mb-6 mr-3">
+						<div class="block text-center mt-2">
+							<svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+								height="50" viewBox="0 0 226 226" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,226v-226h226v226z" fill="none"></path>
+									<g fill="#666666">
+										<path
+											d="M201.26359,157.07c-4.87312,10.82328 -7.22141,15.66109 -13.48937,25.21312c-8.77516,13.34813 -21.15219,30.01563 -36.4425,30.12156c-13.61297,0.12359 -17.12656,-8.88109 -35.61266,-8.72219c-18.46844,0.08828 -22.3175,8.89875 -35.94812,8.7575c-15.30797,-0.14125 -27.01406,-15.14906 -35.78922,-28.47953c-24.54219,-37.37828 -27.13766,-81.20109 -11.97094,-104.50734c10.735,-16.52625 27.70266,-26.23719 43.64625,-26.23719c16.24375,0 26.44906,8.91641 39.86781,8.91641c13.03031,0 20.95797,-8.93406 39.74422,-8.93406c14.19562,0 29.20344,7.73344 39.93844,21.08156c-35.10063,19.24531 -29.39766,69.37141 6.05609,82.79016zM141.00281,38.27875c6.83297,-8.77516 12.02391,-21.15219 10.13469,-33.75875c-11.14109,0.75922 -24.17141,7.87469 -31.78125,17.09125c-6.90359,8.40437 -12.62422,20.86969 -10.39953,32.92891c12.16516,0.38844 24.75406,-6.86828 32.04609,-16.26141z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</div>
+						<div class="block text-center mt-2">
+							<svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+								height="50" viewBox="0 0 226 226" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,226v-226h226v226z" fill="none"></path>
+									<g fill="#666666">
+										<path
+											d="M113,9.04c-57.41812,0 -103.96,46.54188 -103.96,103.96c0,57.41812 46.54188,103.96 103.96,103.96c57.41812,0 103.96,-46.54187 103.96,-103.96c0,-57.41812 -46.54187,-103.96 -103.96,-103.96zM100.71125,86.445l8.33375,6.4975l-20.6225,16.1025l3.955,3.1075l20.6225,-16.1025l8.33375,6.4975l-20.6225,16.24375l3.955,3.1075l20.6225,-16.24375v-14.83125h14.83125v30.2275h14.9725v12.57125h-29.80375v-14.83125l-24.5775,19.21l-22.45875,-17.65625c-3.23109,7.78641 -11.0175,13.2775 -20.0575,13.2775h-19.21v-42.79875h19.21c10.08172,0 17.33844,6.44453 20.0575,13.2775zM159.0475,90.82375h14.83125v30.2275h14.9725v12.57125h-29.80375zM53.3925,103.1125v18.22125h3.24875c5.04969,0 9.3225,-2.84266 9.3225,-9.18125c0,-5.80891 -3.90203,-9.04 -9.3225,-9.04z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</div>
+						<div class="block text-center mt-2">
+							<svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+								height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,172v-172h172v172z" fill="none"></path>
+									<g fill="#666666">
+										<path
+											d="M158.24,16.74313l-72.24,9.03v56.78687h72.24zM79.12,26.63313l-65.36,8.17v47.75687h65.36zM13.76,89.44v47.75688l65.36,8.17v-55.92688zM86,89.44v56.78688l72.24,9.03v-65.81688z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</div>
+						<div class="block text-center mt-2">
+							<svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+								height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,172v-172h172v172z" fill="none"></path>
+									<g fill="#666666">
+										<path
+											d="M17.2,13.76c-1.38976,0 -2.64477,0.84 -3.17797,2.12313c-0.5332,1.28656 -0.23806,2.76522 0.74578,3.74906l34.4,34.4c0.64328,0.64672 1.52059,1.00781 2.43219,1.00781h65.36v65.36c0,0.9116 0.36109,1.78891 1.00781,2.43219l34.4,34.4c0.65704,0.65704 1.53779,1.00781 2.43219,1.00781c0.44376,0 0.89031,-0.08659 1.31687,-0.26203c1.28312,-0.5332 2.12313,-1.78821 2.12313,-3.17797v-137.6c0,-1.89888 -1.54112,-3.44 -3.44,-3.44zM51.9225,65.37344c-1.00588,-0.09691 -2.01681,0.25392 -2.75469,0.99438l-34.4,34.4c-0.64672,0.64328 -1.00781,1.52059 -1.00781,2.43219v51.6c0,1.89888 1.54112,3.44 3.44,3.44h51.6c0.9116,0 1.78891,-0.36109 2.43219,-1.00781l34.4,-34.4c0.98384,-0.98384 1.27898,-2.4625 0.74578,-3.74906c-0.5332,-1.28312 -1.78821,-2.12313 -3.17797,-2.12313h-48.16v-48.16c0,-1.38976 -0.84,-2.64477 -2.12313,-3.17797c-0.32336,-0.13416 -0.65908,-0.21629 -0.99437,-0.2486z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-full md:w-1/3 lg:w-1/3 h-screen overflow-auto relative bg-gray-800">
+				<div class="absolute left-0 z-0 top-0 h-24 w-24 bg-red-300">
+					<div class="absolute left-0 z-0 top-0 h-16 w-16 bg-gray-800 rounded-full"></div>
+				</div>
+				<div class="absolute left-0 z-10 top-0 h-24 w-24 bg-blue-300 ml-12">
+					<div class="absolute right-0 z-0 bottom-0 h-16 w-16 bg-gray-800 rounded-full mr-1"></div>
+				</div>
+				<div class="absolute left-0 z-0 top-0 h-24 w-24 bg-yellow-300 ml-32">
+					<div class="absolute right-0 z-0 bottom-0 h-16 w-16 bg-gray-800"></div>
+				</div>
+				<div class="absolute right-0 z-0 top-0 h-24 w-24 bg-red-300">
+					<div class="absolute right-0 z-0 top-0 h-16 w-16 bg-gray-800 rounded-full"></div>
+				</div>
+				<div class="absolute right-0 z-10 top-0 h-24 w-24 bg-teal-300 opacity-75 rounded-full mr-12"></div>
+				<div class="absolute right-0 z-0 top-0 h-24 w-24 bg-yellow-300 mr-24">
+					<div class="absolute left-0 z-0 bottom-0 h-16 w-16 bg-gray-800 rounded-full"></div>
+				</div>
+				<div class="absolute top-0 right-0">
+					<div class="flex flex-row ml-64 mt-48 py-1">
+						<div
+							class="ig-btn bg-transparant hover:bg-gray-700 text-center px-2 py-2 m-1 ig-icon border border-gray-800">
+							<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+								height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,172v-172h172v172z" fill="none"></path>
+									<g fill="#ffffff">
+										<path
+											d="M55.04,10.32c-24.6648,0 -44.72,20.0552 -44.72,44.72v61.92c0,24.6648 20.0552,44.72 44.72,44.72h61.92c24.6648,0 44.72,-20.0552 44.72,-44.72v-61.92c0,-24.6648 -20.0552,-44.72 -44.72,-44.72zM127.28,37.84c3.784,0 6.88,3.096 6.88,6.88c0,3.784 -3.096,6.88 -6.88,6.88c-3.784,0 -6.88,-3.096 -6.88,-6.88c0,-3.784 3.096,-6.88 6.88,-6.88zM86,48.16c20.8808,0 37.84,16.9592 37.84,37.84c0,20.8808 -16.9592,37.84 -37.84,37.84c-20.8808,0 -37.84,-16.9592 -37.84,-37.84c0,-20.8808 16.9592,-37.84 37.84,-37.84zM86,55.04c-17.0624,0 -30.96,13.8976 -30.96,30.96c0,17.0624 13.8976,30.96 30.96,30.96c17.0624,0 30.96,-13.8976 30.96,-30.96c0,-17.0624 -13.8976,-30.96 -30.96,-30.96z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="yt-btn bg-transparant hover:bg-gray-700 text-center px-2 py-2 m-1 yt-icon border border-gray-800">
+							<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+								height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,172v-172h172v172z" fill="none"></path>
+									<g fill="#ffffff">
+										<path
+											d="M154.45063,49.88c-1.37063,-7.56531 -7.90125,-13.07469 -15.48,-14.79469c-11.34125,-2.40531 -32.33063,-4.12531 -55.04,-4.12531c-22.69594,0 -44.02125,1.72 -55.37594,4.12531c-7.56531,1.72 -14.10937,6.88 -15.48,14.79469c-1.38406,8.6 -2.75469,20.64 -2.75469,36.12c0,15.48 1.37063,27.52 3.09063,36.12c1.38406,7.56531 7.91469,13.07469 15.48,14.79469c12.04,2.40531 32.68,4.12531 55.38937,4.12531c22.70938,0 43.34938,-1.72 55.38938,-4.12531c7.56531,-1.72 14.09594,-6.88 15.48,-14.79469c1.37062,-8.6 3.09062,-20.98937 3.44,-36.12c-0.69875,-15.48 -2.41875,-27.52 -4.13875,-36.12zM65.36,110.08v-48.16l41.96531,24.08z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</div>
+						<div
+							class="fb-btn bg-transparant hover:bg-gray-700 text-center px-2 py-2 m-1 fb-icon border border-gray-800">
+							<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+								height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+								<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+									stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+									stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+									text-anchor="none" style="mix-blend-mode: normal">
+									<path d="M0,172v-172h172v172z" fill="none"></path>
+									<g fill="#ffffff">
+										<path
+											d="M110.08,37.84h17.2c1.89888,0 3.44,-1.54112 3.44,-3.44v-23.17528c0,-1.80256 -1.38632,-3.3024 -3.182,-3.42968c-5.47304,-0.38872 -16.16456,-0.91504 -23.85296,-0.91504c-21.12504,0 -34.88504,12.6592 -34.88504,35.66592v22.81408h-24.08c-1.89888,0 -3.44,1.54112 -3.44,3.44v24.08c0,1.89888 1.54112,3.44 3.44,3.44h24.08v65.36c0,1.89888 1.54112,3.44 3.44,3.44h24.08c1.89888,0 3.44,-1.54112 3.44,-3.44v-65.36h24.84368c1.7544,0 3.22672,-1.31752 3.41936,-3.0616l2.67632,-24.08c0.22704,-2.03648 -1.36912,-3.8184 -3.41936,-3.8184h-27.52v-17.2c0,-5.70008 4.61992,-10.32 10.32,-10.32z">
+										</path>
+									</g>
+								</g>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="absolute inset-y-0 left-0 z-0 flex ml-20 mt-56 service-r 
+					 uppercase border-l">
+					<span class="ml-3 text-3xl text-white font-semibold tracking-widest">Our Service</span>
+				</div>
+				<div class="flex flex-col mt-16">
+					<div class="block bg-gray-700 mt-64 w-64 h-64 ml-40">
+						<div class="z-0 text-6xl text-white font-bold ml-6">
+							ITAS
+						</div>
+						<div class="z-10 ml-6 mt-2 text-white uppercase text-sm">
+							IT ASSESSMENTS
+						</div>
+						<div class="z-10 ml-6 mt-20 text-white uppercase text-xs border-l-2 border-white">
+							<ul class="ml-6">
+								<li>INFRASTRUCTURE</li>
+								<li>DATA BACKUP & RECOVERY</li>
+							</ul>
+						</div>
+					</div>
+					<div class="block bg-red-500 mt-2 w-64 h-64 ml-32">
+						<div class="z-0 text-5xl text-white font-bold ml-6">
+							NETR
+						</div>
+						<div class="z-10 ml-6 mt-2 text-white uppercase text-sm">
+							NETWORK INFRASTRUCTURE
+						</div>
+						<div class="z-10 ml-6 mt-24 text-white uppercase text-xs border-l-2 border-white">
+							<ul class="ml-6">
+								<li>CONTINUOUS MONITORING </li>
+								<li>COST-EFFECTIVE SUPPORT</li>
+							</ul>
+						</div>
+					</div>
+					<div class="block bg-purple-400 mt-2 w-64 h-64 ml-24 mb-6">
+						<div class="z-0 text-5xl text-white font-bold ml-6">
+							APST
+						</div>
+						<div class="z-10 ml-6 mt-2 text-white uppercase text-sm">
+							APPLICATION SUPPORT
+						</div>
+						<div class="z-10 ml-6 mt-24 text-white uppercase text-xs border-l-2 border-white">
+							<ul class="ml-6">
+								<li>FRONTEND SYSTEM</li>
+								<li>BACKEND SYSTEM</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		TweenMax.from(".logo", 1, {
+			delay: 0.4,
+			x: -50,
+			opacity: 0,
+			ease: Expo.easeInOut
+		});
+	</script>
+</body>
+
+</html>
